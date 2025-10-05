@@ -1,12 +1,11 @@
+
+
 package Sort.QuickSort;
 
 import java.util.Random;
 import java.util.Scanner;
-/**
- * 双指针，比lamuto方法效率更高
+/**随机pivot + 双指针
  **/
-
-
 public class LeftPivotQuickSort {
 
     private static final Random RANDOM = new Random ();

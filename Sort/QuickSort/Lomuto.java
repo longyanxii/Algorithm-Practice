@@ -1,7 +1,10 @@
 package Sort.QuickSort;
 import java.util.Scanner;
-
-public class RightPivotQuickSort {
+/**
+ *
+ * Lomuto方法
+ **/
+public class Lomuto {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -40,7 +43,7 @@ public class RightPivotQuickSort {
         int i = low - 1;
         for (int j = low ;j < high ; j ++){
             if (arr[j] <= pivot){
-                i ++;
+                i ++;               /**当i,j不同时交换才有影响*/
                 swap(arr,i , j);
             }
         }
